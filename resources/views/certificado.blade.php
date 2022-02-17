@@ -2,7 +2,7 @@
 
 @section('content')
 @if(true)
-    <h2 class="text-center"> <p class="text-uppercase">Felicitaciones!! </p>por haber culminado el curso de: {{DB::table('cursos')->where('id', $cursoId)->value('name');}}  en CourseWeb. </h2>
+    <h2 class="text-center"> <p class="text-uppercase">Felicitaciones!!! </p>por haber culminado el curso de: {{DB::table('cursos')->where('id', $cursoId)->value('name');}}  en CourseWeb. </h2>
 @endif
 <figure class="figure border"  >
     <img src="{{DB::table('cursos')->where('id', $cursoId)->value('urlPlantilla');}}" alt="certificado" style="left:80%;width: 80%; margin:10%">
